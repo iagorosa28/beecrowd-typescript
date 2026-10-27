@@ -15,20 +15,34 @@ Repositório de estudos de lógica de programação e prática de TypeScript por
 - TypeScript 5.1
 - tsx
 
-## Executando os exercícios
+## Organização dos exercícios
 
-Os exercícios ficam armazenados na pasta `src`.
+Os exercícios ficam armazenados na pasta `src` e organizados por categoria.
+
+Exemplo:
+
+```text
+src/
+├── iniciante/
+│   ├── bee1000.ts
+│   ├── bee1001.ts
+│   └── bee1002.ts
+├── strings/
+└── ad-hoc/
+```
+
+## Executando os exercícios
 
 Para executar um exercício localmente:
 
 ```bash
-npm run dev -- src/nome-do-arquivo.ts
+npm run dev -- src/categoria/nome-do-arquivo.ts
 ```
 
 Exemplo:
 
 ```bash
-npm run dev -- src/bee1000.ts
+npm run dev -- src/iniciante/bee1000.ts
 ```
 
 O projeto utiliza `tsx` para executar os arquivos TypeScript diretamente, sem necessidade de compilação manual.
@@ -40,7 +54,7 @@ Para exercícios que recebem valores pela entrada padrão, é possível enviar o
 Exemplo com dois valores em linhas diferentes:
 
 ```powershell
-"2`n2" | npm run dev -- src/bee1001.ts
+"2`n2" | npm run dev -- src/iniciante/bee1001.ts
 ```
 
 Nesse comando, `` `n `` representa uma quebra de linha no PowerShell.
