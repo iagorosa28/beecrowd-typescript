@@ -14,3 +14,14 @@ Enunciado oficial: https://judge.beecrowd.com/pt/problems/view/1011
 */
 
 // Escreva sua solução abaixo (pendente de resolução):
+import * as fs from "fs";
+
+const input = fs.readFileSync(0, "utf8").trim();
+
+const r = Number(input);
+
+const pi = 3.14159;
+
+const volume = (4/3) * pi * (r ** 3);
+
+console.log("VOLUME = " + volume.toFixed(3));
